@@ -28,8 +28,11 @@ public class Employee {
     }
 
 
-    public Double getSalary(){
-        return null;
+    public double getSalary(){
+        return 0.0;
+    }
+    public String NV() {
+        return "ID: " + id + " | Tên: " + name;
     }
 
 }

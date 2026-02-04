@@ -9,7 +9,7 @@ public class FullTimeEmployee extends Employee{
     }
 
     @Override
-    public Double getSalary() {
+    public double getSalary() {
         return fixedSalary;
     }
 }
