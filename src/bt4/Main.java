@@ -12,7 +12,6 @@ public class Main {
 
         System.out.println("----- DANH SÁCH LƯƠNG NHÂN VIÊN -----");
         for (Employee e : list) {
-            // Nhờ tính đa hình, Java sẽ tự biết gọi getSalary() của FullTime hay PartTime
             System.out.println(e.NV() + " | Lương: " + String.format("%,.0f VNĐ", e.getSalary()));
         }
     }
