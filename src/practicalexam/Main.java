@@ -43,6 +43,5 @@ public class Main {
             System.out.println("-> Order failed: Invalid quantity or insufficient stock.");
         }
 
-        scanner.close();
     }
 }
