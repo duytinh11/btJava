@@ -7,6 +7,8 @@ public class Player {
     private int highScore;
     private int level;
 
+    public Player() {
+    }
 
     public Player(int playerId, int nationalId, String playerName, int highScore, int level) {
         this.playerId = playerId;
