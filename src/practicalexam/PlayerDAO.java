@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PlayerDAO {
 
-    // Câu 1: Insert Player [cite: 18, 26]
+
     public void insertPlayer(int nationalId, String name, int score, int level) throws SQLException {
         String sql = "INSERT INTO Player (NationalId, PlayerName, HighScore, Level) VALUES (?, ?, ?, ?)";
         try (Connection conn = DatabaseConnection.getConnection();
@@ -19,7 +19,7 @@ public class PlayerDAO {
         }
     }
 
-    // Câu 1: Delete Player [cite: 18, 26]
+
     public void deletePlayer(int playerId) throws SQLException {
         String sql = "DELETE FROM Player WHERE PlayerId = ?";
         try (Connection conn = DatabaseConnection.getConnection();
@@ -30,7 +30,7 @@ public class PlayerDAO {
         }
     }
 
-    // Câu 2: Display All [cite: 19, 26]
+
     public void displayAll() throws SQLException {
         String sql = "SELECT * FROM Player";
         try (Connection conn = DatabaseConnection.getConnection();
@@ -45,7 +45,7 @@ public class PlayerDAO {
         }
     }
 
-    // Câu 3: Find by Name [cite: 23, 26]
+
     public void displayAllByPlayerName(String name) throws SQLException {
         String sql = "SELECT * FROM Player WHERE PlayerName LIKE ?";
         try (Connection conn = DatabaseConnection.getConnection();
@@ -58,7 +58,7 @@ public class PlayerDAO {
         }
     }
 
-    // Câu 4: Top 10 High Score [cite: 24, 26]
+
     public void displayTop10() throws SQLException {
         String sql = "SELECT * FROM Player ORDER BY HighScore DESC LIMIT 10";
         try (Connection conn = DatabaseConnection.getConnection();
